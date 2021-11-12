@@ -1,0 +1,257 @@
+/* root */
+:root {
+  --light-gray: #f8f8f8;
+  --dark-aqua: #1abc9c;
+  --medium-gray: #777;
+  --dark-gray: #474e5d;
+  --white: #ffffff;
+  --black: #2f2f2f;
+  --grayish-black: #2f2f2f;
+  --family: Arial, Helvetica, sans-serif;
+  --font-size: 20px;
+}
+/* all */
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+/* navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: var(--light-gray);
+  align-items: center;
+  height: 100px;
+}
+
+/* nav-header */
+
+nav h2 {
+  font-family: var(--family);
+  font-weight: lighter;
+  font-size: 2rem;
+  text-decoration: none;
+  letter-spacing: 5px;
+  margin-left: 40px;
+}
+nav h2 a {
+  text-decoration: none;
+  color: var(--medium-gray);
+}
+
+.toggle-nav {
+  display: none;
+}
+
+/* nav-footer */
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+nav ul li {
+  text-decoration: none;
+  font-family: var(--family);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 1.5rem;
+  margin-right: 50px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--medium-gray);
+}
+
+/* Section-1 */
+.section-1 {
+  display: grid;
+  place-items: center;
+  background-color: var(--dark-aqua);
+  color: var(--white);
+}
+.section-1 h2 {
+  font-family: var(--family);
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin: 100px 0px 50px 0px;
+}
+
+.section-1 img {
+  border-radius: 50%;
+  width: 30%;
+}
+
+.section-1 h3 {
+  font-family: var(--family);
+  font-size: 2rem;
+  font-weight: lighter;
+  margin: 50px 0px 100px 0px;
+}
+/* section-2 */
+.section-2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--dark-gray);
+  color: var(--white);
+  height: 500px;
+}
+.section-2 h2 {
+  font-family: var(--family);
+  font-size: 2.6rem;
+  font-weight: lighter;
+  padding: 100px 0px 50px 0px;
+  word-spacing: 1.2px;
+}
+
+.section-2 p {
+  font-size: 1.8rem;
+  letter-spacing: .1rem;
+  font-weight: lighter;
+  font-family: var(--family);
+  text-align: center;
+  line-height: 3.0rem;
+  padding: 10px 1px;
+  max-width: 1200px;
+}
+
+.section-2 div {
+  /* display: flex;
+    align-items: baseline; */
+  text-align: center;
+  font-size: 2.6rem;
+  width: 140px;
+  margin: 10px 0px 50px 0px;
+  border-radius: 5px;
+  background: white;
+  padding: 10px;
+}
+.section-2 a {
+  color: black;
+  text-decoration: none;
+}
+.section-2 div img {
+  margin-right: 5px;
+}
+/* section-3 */
+.section-3 {
+  background: none;
+}
+.section-3 h2 {
+  margin: 100px 0px;
+  font-family: var(--family);
+  font-size: 2.4rem;
+  font-weight: lighter;
+  text-align: center;
+  color: var(--medium-gray);
+}
+/* section-3 article */
+.where-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 0px 2px 150px 20px;
+}
+
+.where-article {
+  width: 30%;
+  margin: 10px;
+  max-width: 400px;
+}
+
+.where-article p {
+  text-align: center;
+  color: black;
+  font-family: var(--family);
+  font-size: 1.5rem;
+  padding: 10px;
+  height: 130px;
+}
+.where-article img {
+  width: 100%;
+}
+/* footer */
+footer {
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.1rem;
+  background: var(--grayish-black);
+  min-height: 150px;
+}
+
+@media screen and (max-width: 700px) {
+  /* nav */
+  nav {
+    flex-direction: column;
+    height: auto;
+  }
+  /* nav-header */
+  .nav-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .toggle-nav {
+    display: block;
+  }
+  /* nav-footer */
+  .nav-footer {
+    margin: 0px;
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
+    display: none;
+    padding-bottom: 30px;
+  }
+  .show {
+    display: flex;
+  }
+  .nav-footer ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .nav-footer ul li {
+    padding: 10px 0px 10px 0px;
+  }
+  .nav-footer ul li a {
+    font-size: 1.2rem;
+  }
+  .where-div {
+    padding: 0px 20px 120px 20px;
+  }
+  .where-article {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
